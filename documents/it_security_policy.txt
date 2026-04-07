@@ -1,0 +1,29 @@
+COMPANY — IT SECURITY POLICY
+Effective Date: January 1, 2025
+Version: 2.8
+
+1. PASSWORD POLICY
+All employees must use passwords that meet the following criteria: minimum 12 characters, at least one uppercase letter, one lowercase letter, one digit, and one special character. Passwords must be changed every 90 days. The last 10 passwords cannot be reused. Multi-factor authentication (MFA) is mandatory for all corporate accounts including email, VPN, and cloud services. Passwords must never be shared, written down, or stored in plain text files.
+
+2. DEVICE USAGE POLICY
+Company-issued laptops and mobile devices must be encrypted using BitLocker (Windows) or FileVault (macOS). Personal devices may access company email through the approved MDM (Mobile Device Management) solution only. All devices must have the latest operating system patches installed within 7 days of release. USB storage devices are prohibited on production machines. Bluetooth file sharing must be disabled on all company devices.
+
+3. VPN AND NETWORK ACCESS
+All remote access to company resources must be through the corporate VPN (GlobalProtect). Split tunneling is not permitted. VPN sessions automatically disconnect after 12 hours of inactivity. Guest WiFi networks must not be used to access confidential company systems. Employees must not connect to public WiFi networks without first activating the VPN.
+
+4. DATA CLASSIFICATION
+Company data is classified into four levels:
+- PUBLIC: Marketing materials, published blog posts, public documentation
+- INTERNAL: Internal memos, meeting notes, project plans
+- CONFIDENTIAL: Customer data, financial reports, employee records, source code
+- RESTRICTED: Encryption keys, security audit reports, incident response plans
+Data must be handled, stored, and transmitted according to its classification level. Confidential and Restricted data must be encrypted both at rest and in transit.
+
+5. INCIDENT REPORTING
+All security incidents must be reported to the Security Operations Center (SOC) within 1 hour of discovery. The SOC can be reached at security@company.com or extension 9111. Incidents include but are not limited to: suspected phishing emails, unauthorized access attempts, lost or stolen devices, malware infections, and data breaches. Failure to report a known security incident is a violation of this policy and may result in disciplinary action.
+
+6. SOFTWARE INSTALLATION
+Only IT-approved software may be installed on company devices. Requests for new software must be submitted through the IT Service Portal. Open source software must be reviewed by the security team before deployment to production. All software must be kept updated to the latest stable version. Cracked, pirated, or unlicensed software is strictly prohibited.
+
+7. EMAIL AND COMMUNICATION
+Corporate email must not be used for personal purposes. Employees should exercise caution with email attachments and links. Suspicious emails must be reported using the "Report Phishing" button in Outlook. Sensitive data must not be sent via email without encryption. Auto-forwarding of corporate email to personal accounts is prohibited.
