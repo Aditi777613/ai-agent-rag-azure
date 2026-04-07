@@ -4,6 +4,11 @@ A RAG-powered AI Agent built with FastAPI that answers questions by either respo
 
 **Evaluation Note (Task 1 & 4 Compliance)**: This codebase strictly adheres to the mandated requirement to use **Azure OpenAI / OpenAI API**. The environment file supports a simple toggle between Azure OpenAI, standard OpenAI, and Google Gemini via the `LLM_PROVIDER` environment variable.
 
+## 🌐 Live Application URL
+
+**Access the live backend Swagger UI here:**  
+👉 `[INSERT YOUR AZURE URL HERE]/docs` (e.g., `https://your-app-name.azurewebsites.net/docs`)
+
 ---
 
 ## Architecture Overview
