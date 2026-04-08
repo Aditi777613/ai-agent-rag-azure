@@ -212,7 +212,7 @@ az webapp deployment source config-zip \
   --src app.zip
 ```
 
-**The app is live at: `https://aditi-ai-rag.azurewebsites.net/`**
+**The app is live at: `https://aditi-ai-agent-rag.azurewebsites.net/`**
 
 ### Option B: Docker Deployment
 
