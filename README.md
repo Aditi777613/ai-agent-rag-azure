@@ -211,10 +211,10 @@ az webapp deployment source config-zip \
 ### Option B: Docker Deployment
 
 ```bash
-# Build image (pass API key for embedding generation)
-docker build --build-arg OPENAI_API_KEY=sk-... -t ai-agent-rag .
+# Build the image (no API key needed at build time)
+docker build -t ai-agent-rag .
 
-# Run locally
+# Run locally (the key is passed at runtime; the FAISS index is built on first start)
 docker run -p 8000:8000 -e OPENAI_API_KEY=sk-... ai-agent-rag
 
 # Push to Azure Container Registry
@@ -229,7 +229,15 @@ az webapp create \
   --resource-group ai-agent-rg \
   --plan ai-agent-plan \
   --deployment-container-image-name youracr.azurecr.io/ai-agent-rag:latest
+
+# Set the key as an App Service setting (not in the image)
+az webapp config appsettings set \
+  --name your-unique-app-name \
+  --resource-group ai-agent-rg \
+  --settings OPENAI_API_KEY="sk-..."
 ```
+
+The API key is never baked into the image. It is supplied at runtime, and the vector index is generated on first startup.
 
 ### Using Azure OpenAI Instead of OpenAI
 
